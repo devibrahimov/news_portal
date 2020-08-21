@@ -1,0 +1,248 @@
+
+.audioplayer {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #444, #222) repeat scroll 0 0;
+    border: 1px solid #222;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 0 1.25em rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 2.5em;
+    position: relative;
+    text-shadow: 1px 1px 0 #000;
+    z-index: 1;
+}
+.audioplayer-mini {
+    margin: 0 auto;
+    width: 2.5em;
+}
+.audioplayer > div {
+    position: absolute;
+}
+.audioplayer-playpause {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    text-align: left;
+    text-indent: -9999px;
+    top: 0;
+    width: 2.5em;
+    z-index: 2;
+}
+.audioplayer:not(.audioplayer-mini) .audioplayer-playpause {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.audioplayer-mini .audioplayer-playpause {
+    width: 100%;
+}
+.audioplayer-playpause:hover, .audioplayer-playpause:focus {
+    background-color: #222;
+}
+.audioplayer-playpause a {
+    display: block;
+}
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent -moz-use-text-color transparent #fff;
+    border-image: none;
+    border-style: solid none solid solid;
+    border-width: 0.5em medium 0.5em 0.5em;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin: -0.5em 0 0 -0.25em;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+.audioplayer-playing .audioplayer-playpause a {
+    height: 0.75em;
+    left: 50%;
+    margin: -0.375em 0 0 -0.375em;
+    position: absolute;
+    top: 50%;
+    width: 0.75em;
+}
+.audioplayer-playing .audioplayer-playpause a::before, .audioplayer-playing .audioplayer-playpause a::after {
+    background-color: #fff;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 40%;
+}
+.audioplayer-playing .audioplayer-playpause a::before {
+    left: 0;
+}
+.audioplayer-playing .audioplayer-playpause a::after {
+    right: 0;
+}
+.audioplayer-time {
+    height: 100%;
+    line-height: 2.375em;
+    text-align: center;
+    top: 0;
+    width: 4.375em;
+    z-index: 2;
+}
+.audioplayer-time-current {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    left: 2.5em;
+}
+.audioplayer-time-duration {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    right: 2.5em;
+}
+.audioplayer-novolume .audioplayer-time-duration {
+    border-right: 0 none;
+    right: 0;
+}
+.audioplayer-bar {
+    background-color: #222;
+    cursor: pointer;
+    height: 0.875em;
+    left: 6.875em;
+    margin-top: -0.438em;
+    right: 6.875em;
+    top: 50%;
+    z-index: 1;
+}
+.audioplayer-novolume .audioplayer-bar {
+    right: 4.375em;
+}
+.audioplayer-bar div {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.audioplayer-bar-loaded {
+    background-color: #333;
+    z-index: 1;
+}
+.audioplayer-bar-played {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(left center , #007fd1, #c600ff) repeat scroll 0 0;
+    z-index: 2;
+}
+.audioplayer-volume {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    height: 100%;
+    right: 0;
+    text-align: left;
+    text-indent: -9999px;
+    top: 0;
+    width: 2.5em;
+    z-index: 2;
+}
+.audioplayer-volume:hover, .audioplayer-volume:focus {
+    background-color: #222;
+}
+.audioplayer-volume-button {
+    height: 100%;
+    width: 100%;
+}
+.audioplayer-volume-button a {
+    background-color: #fff;
+    display: block;
+    height: 0.375em;
+    left: 35%;
+    position: relative;
+    top: 40%;
+    width: 0.313em;
+    z-index: 1;
+}
+.audioplayer-volume-button a::before, .audioplayer-volume-button a::after {
+    content: "";
+    position: absolute;
+}
+.audioplayer-volume-button a::before {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent #fff transparent -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid solid none;
+    border-width: 0.5em 0.5em 0.5em medium;
+    height: 0;
+    margin-top: -0.5em;
+    right: -0.25em;
+    top: 50%;
+    width: 0;
+    z-index: 2;
+}
+.audioplayer:not(.audioplayer-mute) .audioplayer-volume-button a::after {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #fff;
+  border-image: none;
+  border-radius: 0 0.938em 0 0;
+  border-style: double;
+  border-width: 0.25em 0.25em 0 0;
+  height: 8px;
+  left: 7px;
+  top: -0.063em;
+  transform: rotate(45deg);
+  width: 8px;
+}
+.audioplayer-volume-adjust {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #444, #222) repeat scroll 0 0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: default;
+    height: 6.25em;
+    left: 0;
+    position: absolute;
+    right: -1px;
+    top: -9999px;
+}
+.audioplayer-volume:not(:hover) .audioplayer-volume-adjust {
+    opacity: 0;
+}
+.audioplayer-volume:hover .audioplayer-volume-adjust {
+    bottom: 100%;
+    top: auto;
+}
+.audioplayer-volume-adjust > div {
+    background-color: #222;
+    cursor: pointer;
+    height: 80%;
+    margin: 30% auto 0;
+    position: relative;
+    width: 40%;
+    z-index: 1;
+}
+.audioplayer-volume-adjust div div {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center bottom , #007fd1, #c600ff) repeat scroll 0 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.audioplayer-novolume .audioplayer-volume {
+    display: none;
+}
+.audioplayer-play, .audioplayer-pause, .audioplayer-volume a {
+    filter: drop-shadow(1px 1px 0 #000);
+}
+.audioplayer-bar, .audioplayer-bar div, .audioplayer-volume-adjust div {
+    border-radius: 4px;
+}
+.audioplayer-bar, .audioplayer-volume-adjust > div {
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.1);
+}
+.audioplayer-volume-adjust div div, .audioplayer-bar-played {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) inset;
+}
+.audioplayer-volume-adjust {
+    box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15), 2px -2px 2px rgba(0, 0, 0, 0.15);
+}
+.audioplayer *, .audioplayer *::before, .audioplayer *::after {
+    transition: color 0.25s ease 0s, background-color 0.25s ease 0s, opacity 0.5s ease 0s;
+}

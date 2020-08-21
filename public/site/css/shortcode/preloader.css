@@ -1,0 +1,70 @@
+/*-------------------------------------------------------------------
+    CodePen eave preloader Styles
+-------------------------------------------------------------------*/
+#preloader-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999999;
+  display: block;
+  background: #fff;
+}
+.preloader-wave-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 60px;
+  margin: -25px 0 0 -25px;
+}
+.preloader-wave-effect:before,
+.preloader-wave-effect:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #F0442C;
+  -webkit-animation: preloader-wave 1.7s linear infinite;
+  animation: preloader-wave 1.7s linear infinite;
+}
+.preloader-wave-effect:after {
+  animation-delay: -0.9s;
+  -webkit-animation-delay: -0.9s;
+}
+@keyframes preloader-wave {
+  0% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@-webkit-keyframes preloader-wave {
+  0% {
+    -webkit-transform: scale(0, 0);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+
+
+
+
+
+

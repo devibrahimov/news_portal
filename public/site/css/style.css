@@ -1,0 +1,863 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,500,700';
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Roboto Condensed', sans-serif;*/
+
+/*----------------------------------------*/
+/*  2. Breadcrumb style
+/*----------------------------------------*/
+.breadcrumb-list > li {
+    display: inline-block;
+    float: none;
+    margin-left: 22px;
+    position: relative;
+}
+.breadcrumb-list > li::after {
+    color: #ffffff;
+    content: "/";
+    left: -14px;
+    position: absolute;
+    top: 2px;
+}
+.breadcrumb-list > li:first-child {
+    margin-left: 0;
+}
+.breadcrumb-list > li:first-child::after {
+    content: "";
+}
+.breadcrumb-list > li > a {
+    color: #ffffff;
+}
+/*----------------------------------------*/
+/*  3. Custom-content all   
+/*----------------------------------------*/
+.boxed-layout .wrapper {
+    box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14);
+    margin: auto;
+    position: relative;
+    width: 1240px;
+}
+.boxed-layout .sticky {
+    left: auto;
+    margin: auto;
+    width: 1240px;
+}
+
+.Switcher__control {
+    background-image: none !important;
+}
+
+i.fa.fa-gear.fa-spin {
+    font-size: 20px;
+}
+/*separetor*/
+hr {
+    margin: 60px 0;
+    padding: 0px;
+    border-bottom: 1px solid #eceff8;
+    border-top: 0px;
+}
+hr.style-2 {
+    border-bottom: 1px dashed #f10;
+}
+hr.mp-0 {
+    margin: 0;
+    border-bottom: 1px solid #eceff8;
+}
+hr.mtb-40 {
+    margin: 40px 0;
+    border-bottom: 1px solid #eceff8;
+    border-top: 0px;
+}
+label {
+    font-size: 15px;
+    font-weight: 400;
+    color: #626262;
+}
+/*----------------------------------------*/
+/*  4. Section title
+/*----------------------------------------*/
+.bg-white .header-color,
+.header-color {
+    background: #2f2f2f;
+    color: #fff;
+}
+.bg-dark .header-color {
+    background: #fff;
+    color: #2f2f2f;
+}
+.bg-gray .header-color {
+    background: #2f2f2f;
+    color: #fff;
+}
+.section-title {
+    position: relative;
+    z-index: 1;
+}
+.section-title::after {
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.bg-white .section-title::after,
+.section-title::after {
+    background: #e6e6e6 none repeat scroll 0 0;
+}
+.bg-dark .section-title::after {
+    background: #484848 none repeat scroll 0 0;
+}
+.bg-gray .section-title::after {
+    background: #dbdbdb none repeat scroll 0 0;
+}
+.section-title h2 {
+    font-weight: 700;
+    height: 30px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+}
+/*advertisement*/
+
+.advertisement a {
+    display: block;
+}
+/*----------------------------------------*/
+/*  5. Subcribe form area
+/*----------------------------------------*/
+.subscribe-form.bg-dark .zm-post-title {
+    color: #fff;
+}
+.subscribe-form .zm-post-title {
+    line-height: 21px;
+}
+.subscribe-form.sidebar {
+    padding: 40px;
+}
+.subscribe-form.sidebar > p {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+::-moz-placeholder {
+    color: #7c8c99;
+}
+.subscribe-form input[type=text],
+.subscribe-form input[type=email],
+.subscribe-form input[type=password] {
+    background: #fff;
+    border: 2px solid transparent;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: none;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #7c8c99;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.subscribe-form input:focus {
+    border: 2px solid #f0442c;
+}
+.subscribe-form input[type=submit] {
+    background: #f0442c;
+    border: 0px solid #eceff8;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: none;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+.subscribe-form input[type=submit]:hover {
+    background: #d63b25;
+}
+/*subscripe form v3*/
+
+.subscribe-v3.subscribe-form form {
+    position: relative;
+}
+.subscribe-v3.subscribe-form form input[type="text"] {
+  border: 1px solid #e6e6e6;
+  float: left;
+  margin-bottom: 0;
+  width: 70%;
+  text-align: left;
+}
+.subscribe-v3.subscribe-form form input[type="submit"] {
+    float: left;
+    width: 30%;
+}
+.subscribe-v3.subscribe-form form {
+    margin-top: 25px;
+}
+/*----------------------------------------*/
+/*  6. Tag Cloud
+/*----------------------------------------*/
+.zm-tagcloud a {
+    background: #ecf3f6 none repeat scroll 0 0;
+    color: #3b5265;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 10px 10px 0;
+    padding: 1px 10px;
+    text-transform: uppercase;
+}
+.zm-tagcloud a:hover {
+    background: #f0442c none repeat scroll 0 0;
+    color: #fff;
+}
+/*----------------------------------------*/
+/*  7. Pagination
+/*----------------------------------------*/
+.zm-pagination {
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+}
+.zm-pagination .page-numbers li {
+    display: inline-block;
+}
+.zm-pagination .page-numbers li .page-numbers {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    margin: auto 3px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    transition: 0.3s;
+}
+.zm-pagination .page-numbers li .page-numbers.prev,
+.zm-pagination .page-numbers li .page-numbers.next {
+    background: #e6e6e6;
+    color: #2f2f2f;
+    position: relative;
+    font-weight: 700 !important;
+}
+.zm-pagination .page-numbers li .page-numbers.prev {
+    margin-right: 20px;
+    padding: 0 20px;
+}
+.zm-pagination .page-numbers li .page-numbers.next {
+    margin-left: 20px;
+    padding: 0 20px;
+}
+.zm-pagination .page-numbers li .page-numbers.prev::before,
+.page-numbers.prev::before {
+    content: "\f177";
+    font-family: fontawesome;
+    padding-right: 15px;
+}
+.zm-pagination .page-numbers li .page-numbers.next::after,
+.page-numbers.next::after {
+    content: "\f178";
+    font-family: fontawesome;
+    padding-left: 15px;
+}
+.zm-pagination .page-numbers li .page-numbers.current,
+.zm-pagination .page-numbers li .page-numbers:not(.zm-pgi-dots):hover {
+    background: #2f2f2f;
+    color: #fff;
+}
+/*----------------------------------------*/
+/*  8. Owl Navigator Style
+/*----------------------------------------*/
+.navigator-1.owl-theme .owl-controls .owl-nav div {
+    border-radius: 0;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 7px;
+    text-align: center;
+    top: -55px;
+    width: 20px;
+    z-index: 5;
+}
+.bg-dark .navigator-1.owl-theme .owl-controls .owl-nav div {
+    background: #2f2f2f none repeat scroll 0 0;
+    color: #fff;
+}
+.bg-gray .navigator-1.owl-theme .owl-controls .owl-nav div {
+    background: #f3f3f3 none repeat scroll 0 0;
+    color: #3b5265;
+}
+.bg-white .navigator-1.owl-theme .owl-controls .owl-nav div {
+    background: #fff none repeat scroll 0 0;
+    color: #3b5265;
+}
+.navigator-1.owl-theme .owl-controls .owl-nav div i {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.navigator-1.owl-theme .owl-controls .owl-nav div:hover i {
+    opacity: 1;
+}
+.navigator-1.owl-theme .owl-controls .owl-nav div.owl-prev {
+    right: 27px;
+}
+.navigator-1 {
+    position: relative;
+}
+.navigator-1.owl-theme .owl-controls .owl-nav div i {
+    font-size: 18px;
+}
+.bg-dark .navigator-1.owl-theme .owl-controls .owl-nav div i {
+    color: #fff;
+}
+.owl-theme.navigator-1 .owl-controls .owl-nav [class*="owl-"]:hover {
+    text-decoration: none;
+}
+.bg-dark .owl-theme.navigator-1 .owl-controls .owl-nav [class*="owl-"]:hover {
+    background: #2F2F2F;
+    color: #fff;
+}
+.bg-gray .owl-theme.navigator-1 .owl-controls .owl-nav [class*="owl-"]:hover {
+    background: #f3f3f3;
+    color: #fff;
+}
+.bg-white .owl-theme.navigator-1 .owl-controls .owl-nav [class*="owl-"]:hover {
+    background: #fff;
+    color: #f3f3f3;
+}
+/*----------------------------------------*/
+/*  9. Booking form 
+/*----------------------------------------*/
+.booking-form-wrap {
+    background: #ecf3f6 none repeat scroll 0 0;
+    padding: 40px 30px;
+}
+.booking-form-wrap .single-input + .single-input {
+    margin-top: 10px;
+}
+.booking-form-wrap .single-input .btn,
+.booking-form-wrap .single-input input {
+    border: medium none;
+    border-radius: 0;
+    color: #7c8c99;
+    height: 40px;
+    padding: 0 30px;
+}
+.booking-form-wrap .bs-searchbox .form-control {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.booking-form-wrap .input-group-addon {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    color: #7c8c99;
+    cursor: pointer;
+}
+.booking-form-wrap .form-control {
+    box-shadow: none;
+}
+.booking-form-wrap .btn-default:active:hover,
+.booking-form-wrap .btn-default.active:hover,
+.booking-form-wrap .open > .dropdown-toggle.btn-default:hover,
+.booking-form-wrap .btn-default:active:focus,
+.btn-default.active:focus,
+.booking-form-wrap .open > .dropdown-toggle.btn-default:focus,
+.booking-form-wrap .btn-default.focus:active,
+.booking-form-wrap .btn-default.active.focus,
+.booking-form-wrap .open > .dropdown-toggle.btn-default.focus {
+    background-color: #fff;
+    border-color: #fff;
+    color: #7c8c99;
+}
+.booking-form-wrap .btn-default:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #7c8c99;
+}
+.booking-note {
+    line-height: 16px;
+    margin-bottom: 30px;
+}
+.booking-form-wrap .single-input input[type="submit"] {
+    background: #f0442c none repeat scroll 0 0;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+}
+.booking-form-wrap .single-input input[type="submit"]:hover {
+    background: #D63B25 none repeat scroll 0 0;
+}
+.zm-form-control.username:focus,
+.zm-form-control.password:focus {
+    border: 1px solid red;
+}
+/*----------------------------------------*/
+/*  10. Archive page 1
+/*----------------------------------------*/
+.zm-archive-list > li {
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer;
+}
+.zm-archive-list {
+    position: relative;
+}
+.zm-archive-list::before {
+    background: #e6e6e6 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+}
+.zm-archive-list > li > span {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    padding: 10px 20px 10px 0;
+    position: relative;
+    z-index: 5;
+}
+.zm-archive-list > li > span::after {
+    background: #e6e6e6 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    left: 6%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 94%;
+    z-index: 1;
+}
+.zm-archive-list > li > ul> li {
+    padding: 15px 0;
+    position: relative;
+}
+.zm-archive-list > li > ul {
+    padding-left: 85px;
+}
+.zm-archive-list > li > ul > li > ul {
+    padding-left: 150px;
+}
+.zm-archive-list > li > ul > li > ul > li > ul {
+    padding-left: 200px;
+}
+.zm-archive-list > li:first-child {
+    padding-top: 0;
+}
+.zm-archive-list > li:last-child {
+    padding-bottom: 0;
+}
+.zm-archive-list > li > ul > li > span::before {
+    background: #e6e6e6 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    left: -70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+}
+.zm-archive-list > li > ul > li > span {
+    position: relative;
+    cursor: pointer;
+}
+.zm-archive-list > li > ul > li > span::after {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 100%;
+    content: "";
+    height: 15px;
+    left: -77px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+}
+.zm-archive-list > li > ul > li > ul > li {
+    list-style: outside none disc;
+    padding-left: 5px;
+}
+.zm-archive-list > li > ul > li > ul {
+    margin-top: 25px;
+    padding-left: 50px;
+}
+.zm-archive-list > li > span::before {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eeeeee;
+    border-radius: 100%;
+    content: "\f106";
+    display: inline-block;
+    font-family: fontawesome;
+    height: 20px;
+    line-height: 18px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    color: #3b5265;
+    z-index: 9;
+    cursor: pointer;
+    font-size: 15px;
+}
+.zm-archive-list > li.expandable > span::before {
+    content: "\f107";
+}
+.expand-archive {
+    color: #f0442c;
+    cursor: pointer;
+}
+/*----------------------------------------*/
+/*  11. Archive page 2
+/*----------------------------------------*/
+.archive-filter .sing-option {
+    float: left;
+    width: 33.33%;
+}
+.archive-filter .sing-option .btn-group {
+    width: 100% !important;
+}
+.archive-filter .sing-option + .sing-option {
+    padding-left: 10px;
+}
+.sing-option .btn {
+    border: 1px solid #efefef;
+    border-radius: 0;
+    height: 40px;
+}
+.sing-option .btn:hover {
+    border: 1px solid #efefef;
+    background: transparent;
+}
+.archive-filter .submit-button {
+    height: 40px;
+}
+.sing-option .btn-group.open .dropdown-toggle {
+    box-shadow: none;
+}
+.sing-option .btn-default:active,
+.sing-option .btn-default.active,
+.sing-option .open > .dropdown-toggle.btn-default {
+    background-color: transparent;
+    border-color: #efefef;
+}
+.sing-option .btn-default:focus,
+.sing-option .btn-default.focus {
+    background-color: transparent;
+    border-color: #efefef;
+}
+.dropdown-menu {
+    z-index: 99999;
+}
+.archive .zm-pagination .page-numbers li {
+    display: inline-block;
+}
+/*----------------------------------------*/
+/*  12. Contact form
+/*----------------------------------------*/
+.border-top {
+    border-top: 1px solid #e6e6e6;
+}
+.border-bottom {
+    border-bottom: 1px solid #e6e6e6;
+}
+.single-address i {
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    color: #f0442c;
+    font-size: 30px;
+    height: 60px;
+    line-height: 58px;
+    text-align: center;
+    width: 60px;
+}
+.single-address h4 {
+    margin: 25px 0 20px;
+}
+.message-box .submit-button {
+    margin-top: 27px;
+}
+#bodyContent {
+    text-align: center;
+}
+/*----------------------------------------*/
+/*  13. Registation page
+/*----------------------------------------*/
+.single-input label {
+    color: #1b3346;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.registation-form-wrap .remember {
+    width: 40px;
+}
+.registation-form-wrap .remember:focus {
+    outline: none;
+}
+/*----------------------------------------*/
+/*  14. Page not found (404)
+/*----------------------------------------*/
+a.submit-button {
+    display: table-cell;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px;
+    text-align: center;
+}
+.page-notfound-inner a.submit-button {
+    padding: 0 150px;
+}
+.page-notfound-inner a.submit-button:hover {
+    background: #d63b25 none repeat scroll 0 0;
+    color: #fff;
+}
+.page-notfound-inner h1 {
+    font-size: 200px;
+    color: #333333;
+}
+.page-notfound-inner h1 span {
+    color: #f0442c;
+}
+@keyframes color {
+    0% {
+        color: #f0442c;
+    }
+    10% {
+        color: #ff6666;
+    }
+    20% {
+        color: #ff9999;
+    }
+    30% {
+        color: #ff33cc;
+    }
+    40% {
+        color: #ff99cc;
+    }
+    50% {
+        color: #9933ff;
+    }
+    60% {
+        color: #cc99ff;
+    }
+    70% {
+        color: #33ccff;
+    }
+    80% {
+        color: #33ff33;
+    }
+    90% {
+        color: #ffff33;
+    }
+    100% {
+        color: #ff9933;
+    }
+}
+.page-notfound-inner h1 span {
+    animation-delay: 3s;
+    animation-duration: 33s;
+    animation-iteration-count: 10;
+    animation-name: color;
+}
+.page-notfound-inner h4 {
+    color: #336666;
+    font-family: roboto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+}
+.page-notfound-inner p {
+    color: #336666;
+    font-size: 25px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.page-notfound-wrap {
+  padding: 220px 0 250px;
+}
+
+.zm-section.bg-color.page-notfound-wrap {
+    background-color: #d2dfef;
+}
+/*----------------------------------------*/
+/*  15. Scroll To Top
+/*----------------------------------------*/
+#scrollUp {
+    background: #ccc none repeat scroll 0 0;
+    border-radius: 10% 10% 0 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    color: #888;
+    font-size: 22px;
+    height: 30px;
+    line-height: 30px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    width: 45px;
+    z-index: 200;
+}
+#scrollUp:hover{
+    background: #f0442c none repeat scroll 0 0;
+    color: #fff;
+    height: 40px;
+} 
+@-webkit-keyframes scroll-to-top {
+    0% {
+        opacity: 0;
+        bottom: 0;
+    }
+    50% {
+        opacity: 1;
+        bottom: 50%;
+    }
+    100% {
+        opacity: 0;
+        bottom: 75%;
+    }
+}
+@-moz-keyframes scroll-to-top {
+    0% {
+        opacity: 0;
+        bottom: 0;
+    }
+    50% {
+        opacity: 1;
+        bottom: 50%;
+    }
+    100% {
+        opacity: 0;
+        bottom: 75%;
+    }
+}
+@keyframes scroll-to-top {
+    0% {
+        opacity: 0;
+        bottom: 0;
+    }
+    50% {
+        opacity: 1;
+        bottom: 50%;
+    }
+    100% {
+        opacity: 0;
+        bottom: 75%;
+    }
+}
+#scrollUp:hover i {
+    animation: 800ms linear 0s normal none infinite running scroll-to-top;
+    height: 100%;
+    left: 0;
+    margin-bottom: -25px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+/*----------------------------------------*/
+/*  16. Mobile menu
+/*----------------------------------------*/
+.mean-container a.meanmenu-reveal {
+    padding: 15px 20px;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+    height: 30px;
+}
+.mean-container .mean-bar {
+    background: #2f2f2f none repeat scroll 0 0;
+}
+.mean-container .mean-nav {
+    background: #2f2f2f none repeat scroll 0 0;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+    background: rgba(240, 68, 44, 0.9) none repeat scroll 0 0;
+}
+.search-wrap.mobile-search .mobile-search-btn {
+    background: transparent none repeat scroll 0 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 52px;
+    left: 0;
+    line-height: 52px;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    z-index: 2147483647;
+}
+.mobile-menu {
+    position: relative;
+}
+.mobile-search-form {
+    background: #fff none repeat scroll 0 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    z-index: 2147483647;
+    display: none;
+}
+.mobile-search-form form input {
+    margin: 0;
+    padding: 0 65px 0 20px;
+}
+.mobile-search-form form button {
+    background: #f0442c none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px;
+}
+.mobile-search-form form {
+    position: relative;
+}
+/*Audio player*/
+.audioplayer {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top, #444, #222) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(center top, #444, #222) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -ms-linear-gradient(center top, #444, #222) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -o-linear-gradient(center top, #444, #222) repeat scroll 0 0;
+    border: 1px solid #222;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+
+
+
+
+
+/*ajax form css*/
+p.form-messege{
+  margin-top:15px;
+  font-size:20px;
+}
+p.success {
+  color: green;
+}
+p.error {
+  color: red;
+}

@@ -1,0 +1,141 @@
+
+
+/*footer top wraper [footer 1]*/
+.zm-widget-title {
+  letter-spacing: 2px;
+}
+.zm-widget ul li {
+    padding: 7px 0;
+}
+.footer-2 .zm-widget ul li {
+  padding: 6px 0;
+}
+.zm-widget ul li:last-child, .footer-2 .zm-widget ul li:last-child {
+    padding-bottom: 0;
+}
+.zm-widget ul li:first-child, .footer-2 .zm-widget ul li:first-child {
+    padding-top: 0;
+}
+.zm-social-media.zm-social-1 ul li a i {
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.zm-category-widget.zm-category-1 ul li a {
+    display: block;
+    padding-left: 17px;
+    position: relative;
+}
+.zm-category-widget.zm-category-1 ul li a::after {
+    background: #c1c1c1 none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    transition: 0.3s;
+}
+.zm-category-widget.zm-category-1 ul li a span {
+    float: right;
+}
+.zm-widget-content > p {
+    margin-bottom: 25px;
+}
+.subscribe-form.subscribe-footer > p {
+    margin-bottom: 25px;
+}
+.zm-widget-content > p:last-child {
+    margin-bottom: 0;
+}
+
+.zm-widget ul li a:hover i{
+    color: #f0442c;
+}
+
+.zm-widget ul li a:hover::after {
+    background: #f0442c none repeat scroll 0 0;
+}
+
+/*Flickr*/
+.zm-flickr {
+    margin-top: 10px;
+    overflow: hidden;
+}
+.zm-flickr ul {
+    margin-left: -5px;
+    overflow: hidden;
+}
+.zm-flickr ul li {
+    float: left;
+    width: 33.33%;
+    padding: 0;
+}
+.footer-2 .zm-flickr ul li {
+    padding: 0;
+}
+.zm-flickr ul li a {
+    display: block;
+    margin: 5px;
+    position: relative;
+}
+.zm-flickr ul li a img {
+    width: 100%;
+}
+.zm-flickr a:hover img{
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+/*social media 2*/
+
+.zm-social-media.zm-social-2 ul li {
+    display: inline-block;
+    margin: auto 5px;
+    padding: 0;
+}
+.zm-social-media.zm-social-2 ul li a {
+    border: 1px solid #c1c1c1;
+    border-radius: 100%;
+    display: block;
+    font-size: 12px;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+    line-height: 29px;
+}
+.zm-social-media.zm-social-2 ul li:first-child {
+    margin-left: 0;
+}
+.zm-social-media.zm-social-2 ul li:last-child {
+    margin-right: 0;
+}
+.zm-social-media.zm-social-2 ul li a:hover {
+    background: #f0442c none repeat scroll 0 0;
+    border-color: #f0442c;
+    color: #fff;
+}
+.zm-social-media.zm-social-2 ul li a:hover i{
+    color: #fff;
+}
+
+/*copyright*/
+.footer-buttom p, .footer-buttom a {
+  font-size: 12px;
+}
+
+.zm-widget .zm-flickr ul li a::after {
+  background: #f0442c none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity:0;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.zm-widget .zm-flickr ul li a:hover::after {
+  opacity: 0.5;
+}
